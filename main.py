@@ -7,7 +7,7 @@ if __name__ == "__main__":
 
     game = GameEngine()
 
-    register_scenes(game.scene_manager)
+    register_scenes(game.scene_manager, game.event_handler)
     
     game.scene_manager.load_scene("example")
 

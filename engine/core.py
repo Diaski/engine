@@ -34,6 +34,7 @@ class GameEngine:
 
     def update(self):
         self.physics_engine.update()
+        self.scene_manager.get_current_scene().update()
 
     def render(self):
         self.renderer.render(self.scene_manager.get_current_scene())
